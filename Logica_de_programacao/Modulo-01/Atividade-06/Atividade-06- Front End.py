@@ -20,7 +20,7 @@ qtdAprovadosD = 0
 
 print("Programa para cadastro de notas do vestibular. Insira notas distintas por turma, por aluno.")
 
-for i in range(1, 26, 1):
+for i in range(1, 3, 1):
     print("Digite o nome do Aluno " , i , " da Turma A: " )
     alunoTemp = input()
     print("Digite a nota do Aluno ", i , " da Turma A:")
@@ -34,7 +34,7 @@ for i in range(1, 26, 1):
         maiorNotaGeral = notaTemp
         alunoMaiorGeral = alunoTemp
 
-for i in range(1, 26, 1):
+for i in range(1, 3, 1):
     print("Digite o nome do Aluno " , i , " da Turma B: " )
     alunoTemp = input()
     print("Digite a nota do Aluno ", i , " da Turma B:")
@@ -48,7 +48,7 @@ for i in range(1, 26, 1):
         maiorNotaGeral = notaTemp
         alunoMaiorGeral = alunoTemp
 
-for i in range(1, 26, 1):
+for i in range(1, 3, 1):
     print("Digite o nome do Aluno " , i , " da Turma C: " )
     alunoTemp = input()
     print("Digite a nota do Aluno ", i , " da Turma C:")
@@ -62,7 +62,7 @@ for i in range(1, 26, 1):
         maiorNotaGeral = notaTemp
         alunoMaiorGeral = alunoTemp
 
-for i in range(1, 26, 1):
+for i in range(1, 3, 1):
     print("Digite o nome do Aluno " , i , " da Turma D: " )
     alunoTemp = input()
     print("Digite a nota do Aluno ", i , " da Turma D:")
