@@ -1,7 +1,7 @@
 from turtle import pd
 import pandas as pd
 
-df = pd.read_csv('./LogicaProgOO/Modulo02/Atividade08/notas_aluno.csv')
+df = pd.read_csv('./Logica_de_programacao/Modulo-02/Atividade-08/notas_aluno.csv')
 df["Media"] = (df["Primeira Nota"]+df["Segunda Nota"])/2
 
 df.loc[(df["Faltas"] > 5) | (df["Media"] < 7), "Situação"] = "REPROVADO"
@@ -17,6 +17,6 @@ maiorFaltas = df["Faltas"].max()
 alunoMaiorFaltas = df.query("Faltas==@maiorFaltas")
 print("O aluno", alunoMaiorFaltas["Nome do Aluno"].values, "tem maior número de faltas:", maiorFaltas)
 
-df.to_csv('./LogicaProgOO/Modulo02/Atividade08/alunos_situacao.csv')
+df.to_csv('./Logica_de_programacao/Modulo-02/Atividade-08/alunos_situacao.csv')
 
 print(df.head)
