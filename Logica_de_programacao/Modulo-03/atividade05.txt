@@ -1,0 +1,24 @@
+GARFOS NAS REDES SOCIAIS:
+Os vértices não necessariamente precisam ser pessoas, nem as arestas, relacionamentos de amizade.
+Poderíamos ter lugares que se conectam por linhas de metrô, empresas envolvidas na operação Lava-Jato ou
+partidos políticos e suas coligações.
+Gigantes de Tecnologia como Facebook e Google fazem uso da Teoria dos Grafos em suas aplicações, sendo as
+mais notáveis as sugestões de amigos de seus amigos na empresa do Zuckerberg e a definição da melhor rota
+no Google Maps. Mas o que isso tem a ver com o comércio eletrônico?
+Bom, passamos recentemente pela Black Friday, um evento muito aguardado pelas lojas e por compradores
+atentos aos descontos promovidos na data. Por conta disso, o tráfego de potenciais compradores nos sites
+dessas lojas aumenta consideravelmente durante o período, assim como a preocupação com o tempo de resposta
+das páginas, com o sucesso das compras e com os indesejáveis fraudadores.
+
+GARFOS BANCO DE DADOS:
+No início do desenvolvimento do site de vendas, a loja deve considerar de que forma ela irá armazenar os dados
+que trafega. Dados como cadastro do comprador, informações do produto, detalhes de pagamento, forma de entrega,
+entre outros.
+O conceito mais utilizado é o Relacional (RDBMS), que provê uma estrutura tabular como as planilhas, mas
+oferece o relacionamento entre as tabelas.
+Ironicamente o modelo Relacional é péssimo para lidar com relacionamento de dados, principalmente os que
+são frequentemente mutáveis como um usuário “seguir” outro no Twitter. Sua estrutura não é flexível,
+forçando as colunas a terem valores nulos. Além disso, sua performance deixa a desejar quando há relacionamento
+entre várias tabelas seguidas (múltiplos JOINs). Tente imaginar a performance de uma consulta em tempo real
+que responda: “quais clientes compraram esse produto também compraram aquele produto e quais são similares a
+esse último?”. Daí a ideia de modelar um banco com grafos.
